@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hi{
+         text-align: center;
+         background-color: rgb(175, 226, 226);
+         font-weight:bold;
+        }
+        .area{
+            text-align: center; 
+          
+        }
+        .hobbies{
+            /* background-color: rgb(199, 179, 179); */
+            font-weight:bold;
+        }
+        .hoby{
+           font-size:medium;
+           margin-left: 3%;
+           /* background-color:rgb(173, 229, 227) */
+        }
+        .hoob{
+            margin-left:3%;
+        }
+        .skill{
+            font-weight:bold;
+        }
+        .skills,.dece{
+            margin-left:3%;
+        }
+        legend{
+            font-size: 32px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let hi=document.createElement("h1");
+        console.log(hi);
+        hi.className="hi"
+        hi.innerText="Vaidya Anjali"
+        console.log(hi.innerText)
+       document.body.appendChild(hi)
+         let forms=document.createElement("p")
+          forms.className="form"
+          forms.innerHTML="<form><fieldset><legend>Carrer Objective</legend>To secure a challenging position in a reputable organization where i can utilize my skills,knowledge,and enthusiasm to contribute to the company's success while continuously learning and growing in a professional environment.</fieldset></form>"
+          document.body.append(forms)
+         let hobbies=document.createElement("h1");
+         console.log(hobbies);
+         hobbies.innerText="Hobbies:"
+         hobbies.className="hobbies"
+         console.log(hobbies.innerText);
+         document.body.append(hobbies);
+         let hoby=document.createElement("p");
+         console.log(hoby);
+         hoby.className="hoby"
+         hoby.innerHTML=".Listening to music<br>.Browsing the internet"
+         console.log(hoby.innerHTML)
+         document.body.append(hoby)
+         let skill=document.createElement("h1");
+         console.log(skill)
+         skill.innerText="Skill:"
+         console.log(skill.innerText)
+         document.body.append(skill)
+         let skills=document.createElement("p")
+         skills.innerHTML=".HTML<br>.CSS<br>.JAVASCRIPT"
+         skills.className="skills"
+         console.log(skills.innerHTML)
+         document.body.append(skills)
+         let dec=document.createElement("h1")
+         dec.classNmae="dec"
+         dec.innerText="Declaration:"
+         console.log("dec.innerText")
+         document.body.append(dec)
+         let dece=document.createElement("p")
+         console.log(dece)
+         dece.className="dece"
+         dece.innerText="The information presented in this resume accurately reflects my qualifications and experience"
+         document.body.append(dece)
+         
+    </script>
+</body>
+</html>

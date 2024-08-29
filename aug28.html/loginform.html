@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+       
+        <input type="text" id="name"><br>
+      
+        <input type="email"id="mail"><br>
+        
+        <input type="password"id="pw"><br>
+        <input type="button" id="reg" value="login "><br>
+    </form>
+    <script>
+        var arr=[];
+         var reg=document.getElementById("reg")
+         reg.addEventListener("click",()=>{
+            var name=document.getElementById("name")
+            var email=document.getElementById("mail")
+            var password=document.getElementById("pw")
+            // to store the data
+            console.log(name.value,email.value,password.value)
+            var obj={
+                name:name.value,
+                email:email.value,
+                password:password.value
+            }
+            console.log(obj);
+            arr.push(obj);
+            console.log(arr);
+            console.log(window.location.href)
+
+
+
+
+         })
+
+    </script>
+</body>
+</html>

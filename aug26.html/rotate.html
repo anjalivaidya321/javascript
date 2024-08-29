@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp">
+
+    <button onclick="hello()">0degree</button>
+    <button onclick="hello1()">90degree</button>
+    <button onclick="hello2()">120degree</button>
+    <button onclick="hello3()">180degree</button>
+    <script>
+        function hello(){
+          var  imgget=document.getElementsByTagName("img")
+            imgget[0].src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp";
+         imgget[0].style.transform="rotate(0deg)";
+         
+        }
+        function hello1(){
+            var  imgget=document.getElementsByTagName("img")
+            imgget[0].src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp";
+         imgget[0].style.transform="rotate(90deg)";
+        }
+        
+        function hello2(){
+            var  imgget=document.getElementsByTagName("img")
+            imgget[0].src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp";
+         imgget[0].style.transform="rotate(120deg)";
+        }
+        function hello3(){
+            var  imgget=document.getElementsByTagName("img")
+            imgget[0].src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp";
+         imgget[0].style.transform="rotate(180deg)";
+        }
+    </script>
+</body>
+</html>

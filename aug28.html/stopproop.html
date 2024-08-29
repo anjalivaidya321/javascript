@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+           
+            border: 1px solid;
+            width: 80px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        parent
+        <button value="hell">
+            child
+        </button>
+    </div>
+    <script>
+       
+        var btn=document.getElementsByTagName("button")
+        btn[0].addEventListener("click",function(event){
+            var hexa=document.getElementsByTagName("div")
+          
+           console.log("child ")
+           event.stopPropagation();
+           
+        })
+        var hexaa=document.getElementsByTagName("div")
+        hexaa[0].addEventListener("click",function(){
+            var hexa=document.getElementsByTagName("div")
+             hexa[0].style.backgroundColor="aquamarine"
+            console.log("parent ")
+
+        })
+</script>
+</body>
+</html>

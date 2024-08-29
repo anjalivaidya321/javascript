@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            margin-top: 20%;
+            margin-left: 40%;
+            animation-name: hi;
+            animation-duration: 10s;
+        }
+        /* h1:hover{
+           color:brown ;
+           transform: scaleX(1.5);
+        } */
+        @keyframes hi{
+            0%{
+                transform: scaleX(2);
+             color: rgb(9, 146, 236);
+
+            }
+            25%{
+                transform: scaleX(2);
+             color: rgb(46, 29, 9);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const ab=document.createElement("h1");
+        ab.innerText="The page is loading ...."
+        document.body.append(ab);
+    </script>
+</body>
+</html>
