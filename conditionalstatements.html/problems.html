@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   // switch case
+        var weekday="monday"
+        switch  (weekday){
+        case "monday":
+        console.log("mon")
+        case "tuesday":
+        console.log("tue")
+        case "wednesday":
+        console.log("wed")
+        case "thursday":
+        console.log("thur")
+        case "friday":
+        console.log("frui")
+        case "saturday":
+        console.log("sat")
+        case "sunday":
+        console.log("sun")
+        default:
+        console.log("nan")
+        }
+   /* TERNERAY OPERATOR */
+       var a="10"
+      console.log(a%2==0 ? "a is even number" :  "a is not a even number")
+    //   grade calculator
+       var a = 55;
+       if(a>=90){
+       console.log("A grade");
+       }
+       else if(a>=80 && a<90){
+       console.log("B grade")
+       }
+       else if(a>=70 && a<80){
+       console.log("C grade")
+       }
+       else if(a>70 && a<60){
+       console.log("D grade")
+       }
+       else if(a=60 && a>35){
+       console.log("pass")
+       }
+       else{
+       console.log("fail")
+       }
+    //    tables from 1 to 10
+        for(j=1;j<=10;j++){
+        for(i=1;i<=10;i++){
+        console.log(j,"*",i,"=",j*i)
+        }}
+    // weeek selcting using switch case
+        var weekday=9;
+        switch(weekday){
+        case 1:
+        console.log("Today is Monday");
+        break;
+        case 2:
+        console.log("Today is Tuesday");
+        break;
+        case 3:
+        console.log("Today is Wednesday");
+        break;
+        case 4:
+        console.log("Today is Thursday");
+        break;
+        case 5:
+        console.log("Today is Friday");
+        break;
+        case 6:
+        console.log("Today is Saturday");
+        break;
+        case 7:
+        console.log("Today is Sunday");
+        break;
+        default:
+        console.log("unknown week")
+        }
+    // countdown from n to 1
+        for(j=10;j>=1;j--){
+        console.log(j)
+        }
+    // even number from 1 to 20
+        for(j=1;j<=20;j++){
+        if(j%2==0){
+        console.log(j,"it is a even number")
+        }
+        }
+   // sum of 10 natural numbers
+        sum=0
+         for(i=1;i<=10;i++){
+            sum=sum+i
+        // console.log(sum)
+        }
+        console.log("The sum of 10 natural numbers is:",sum)
+    // season determiner
+    var a=4;
+if (a==1){
+    console.log("it is january and season is winter");
+}
+else if(a==2){
+    console.log("it is february and season is winter");
+}
+else if(a==3){
+    console.log("it is march and season is winter");
+}
+else if(a==4){
+    console.log("it is april and season is summer");
+}
+else if(a==5){
+    console.log("it is may and season is summer");
+}
+else if(a==6){
+    console.log("it is june and season is monsoon");
+}
+else if(a==7){
+    console.log("it is july and season is monsoon");
+}
+else if(a==8){
+    console.log("it is august and season is monsoon");
+}
+else if(a==9){
+    console.log("it is september and season is monsoon");
+}
+else if(a==10){
+    console.log("it is october and season is post-monsoon");
+}
+else if(a==11){
+    console.log("it is novemberand season is post-monsoon");
+}
+else if(a==12){
+    console.log("it is decemberand season is post-monsoon");
+}
+else{
+    console.log("unknown month");
+}
+// celsius to fahreinheit convertor
+celsius=30;
+// celsius to fahrenheit formula=(celsius*9/5)+32
+if(celsius==30){
+    console.log("fahrenheit=",86)
+}
+else if(celsius==120){
+     console.log("fahrenheit=",248)
+}
+else if(celsius==190){
+     console.log("fahrenheit=",302)
+}
+else{
+     console.log("not found celsius number")
+}
+    </script>
+</body>
+</html>

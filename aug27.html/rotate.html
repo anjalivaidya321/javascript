@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
+    <img src="https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp">
+
+    <button id="one">0degree</button>
+    <button id="two">90degree</button>
+    <button id="three">120degree</button>
+    <button id="four">180degree</button>
+    <script>
     
+        var but1=document.getElementById("one")
+        but1.addEventListener("click",function(){
+            var a=document.getElementsByTagName("img")
+            a[0].style.transform="rotate(0deg)"
+        })
+        var but2=document.getElementById("two")
+        but2.addEventListener("click",function(){
+            var a=document.getElementsByTagName("img")
+            a[0].style.transform="rotate(90deg)"
+        })
+        var but3=document.getElementById("three")
+        but3.addEventListener("click",function(){
+            var a=document.getElementsByTagName("img")
+            a[0].style.transform="rotate(120deg)"
+        })
+        var but4=document.getElementById("four")
+        but4.addEventListener("click",function(){
+            var a=document.getElementsByTagName("img")
+            a[0].style.transform="rotate(180deg)"
+        })
+    </script>
 </body>
 </html>
