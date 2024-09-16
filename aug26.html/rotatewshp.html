@@ -29,9 +29,9 @@
 <body>
 <div id="ma">
     <div id="main">
-        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=502&sh=753" width="100px" height="100px" id="first" onmouseover="fun1()">
-        <img src="https://www.vastranand.in/cdn/shop/files/1_871d6045-82d0-4209-b464-46ce51a4c7f3.jpg?v=1716447638&width=1080" width="100px" id="second" height="100px" onmouseover="fun2()" >
-        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw68719691/images/ss24/ribayat2344ss24skblu_1.jpg?sw=502&sh=753" width="100px" height="100px"  id="third"onmouseover="fun3()">
+        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=502&sh=753" width="100px" height="100px" id="first" onmouseover="fun1()" onmouseout="fun4()">
+        <img src="https://www.vastranand.in/cdn/shop/files/1_871d6045-82d0-4209-b464-46ce51a4c7f3.jpg?v=1716447638&width=1080" width="100px" id="second" height="100px" onmouseover="fun2()"  onmouseout="fun4()">
+        <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw68719691/images/ss24/ribayat2344ss24skblu_1.jpg?sw=502&sh=753" width="100px" height="100px"  id="third"onmouseover="fun3()" onmouseout="fun4()">
     </div>
     <div class="next">
         <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw7b4f02a7/images/aw23/fstve2164aw23chered_1.jpg?sw=502&sh=753" width="300px" id="src">
@@ -53,7 +53,11 @@
         var repl13=document.getElementById("third")
         rep3.setAttribute("src",repl13.src)
     }
-    
+    function fun4(){
+        var repl1=document.getElementById("src")
+        var rep11=document.getElementById("first")
+        repl1.setAttribute("src",rep11.src)
+    }
 </script>
 </body>
 </html>

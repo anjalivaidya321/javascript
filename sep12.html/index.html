@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="maindiv">
+    <h1 id="id1"></h1>
+  <h5 id="title1"></h5>
+  <h5 id="price1"></h5>
+  <h5 id="des1"></h5>
+  <h5 id="cat1"></h5>
+  <h5 id="rate1"></h5>
+  <h5 id="count1"></h5>
+  <img src="" alt="" id="image">
+  </div>
+  
+  <script>
+    var maindiv=document.getElementById("maindiv")
+    maindiv.style.boxShadow="0px 0px 5px 9px green"
+    var a=localStorage.getItem("single")
+    var a1=JSON.parse(a)
+    console.log(a1)
+    var id1=document.getElementById("id1")
+    id1.innerText=a1["id"]
+    var title1=document.getElementById("title1")
+    title1.innerText=a1["title"]
+    var price1=document.getElementById("price1")
+    price1.innerText=a1["price"]
+    var des1=document.getElementById("des1")
+    des1.innerText=a1["description"]
+    var cat1=document.getElementById("cat1")
+    cat1.innerText=a1["category"]
+    var img=document.getElementById("image")
+    img.setAttribute("src",a1["image"] )
+    img.style.width="100px"
+    var rate1=document.getElementById("rate1")
+    rate1.innerText=a1["rating"]["rate"]
+    var count1=document.getElementById("count1")
+    count1.innerText=a1["rating"]["count"]
+    </script>
+</body>
+</html>

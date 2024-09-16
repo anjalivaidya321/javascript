@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Enter the text" id="inp">
+        <button id="btn">ADD TASK</button>
+    </form>
+    <script>
+        var btn=document.getElementById("btn")
+        btn.addEventListener("click",function (){
+            event.preventDefault()
+            let a=document.getElementById("inp");
+             let li1=document.createElement("li")
+             li1.innerText=a.value
+             let ul=document.createElement("ul")
+             ul.append(li1)
+             document.body.append(ul)
+            let d=document.createElement("button")
+            d.innerText="edit"
+            d.addEventListener("click",function(){
+                li1.innerText=prompt("enter the vlue")
+            })
+            document.body.append(d)
+            let e=document.createElement("button")
+            e.innerText="delete"
+            e.addEventListener("click",function(){
+                li1.remove()
+                d.remove()
+                e.remove()
+            })
+            document.body.append(e)
+
+        })
+    </script>
+</body>
+</html>

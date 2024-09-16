@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" id="user">
+        <input type="text"id="pw">
+        <input type="button"id="btn" value="register">
+    </form>
+    <script>
+        let btn=document.getElementById("btn")
+        arr=[]
+        btn.addEventListener("click",function(){
+            event.preventDefault();
+            let user=document.getElementById("user").value
+            let pw=document.getElementById("pw").value
+            console.log(user,pw);
+            var data=localStorage.getItem("register")
+            //   var data=JSON.parse(localStorage.getItem("register"))
+            data1=JSON.parse(data)
+            console.log("regdata",data1 )
+        })
+            </script>
+</body>
+</html>

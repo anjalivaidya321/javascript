@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <button id="personal">Personal Info</button>
+    <button id="Buisness">Buisness Info</button>
+    <button id="fav">Favourites</button><br>
+    <script>
+        var personal=document.getElementById("personal");
+        personal.addEventListener("click",function(){
+            var form=document.createElement("forms")
+           var name=document.createElement("input")
+           name.setAttribute("type", "text"); 
+           name.style.display="block"
+           name.setAttribute("placeholder", "Full Name");   
+           var Father=document.createElement("input") 
+           Father.setAttribute("type", "text");
+           Father.setAttribute("placeholder", "Father Name");  
+           Father.style.display="block" 
+           var mother=document.createElement("input")   
+           mother.setAttribute("type", "text");
+           mother.setAttribute("placeholder", "Mother Name"); 
+           mother.style.display="block" 
+           var dob=document.createElement("input")
+           dob.setAttribute("type","date")
+           var mail=document.createElement("input")
+           mail.setAttribute("type","email")
+           mail.setAttribute("placeholder","email")
+           mail.style.display="block" 
+           var submit=document.createElement("input")
+           submit.setAttribute("type","submit")
+           form.append(name,Father,mother,dob,mail,submit)
+           document.body.append(form)
+        })
+    </script>
+</body>
+</html>

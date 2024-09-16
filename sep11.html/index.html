@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="user">
+        <input type="text"id="pw">
+        <input type="button"id="btn" value="register">
+    </form>
+    <script>
+        let btn=document.getElementById("btn")
+        arr=[]
+        btn.addEventListener("click",function(){
+            event.preventDefault();
+            let user=document.getElementById("user").value
+            let pw=document.getElementById("pw").value
+            console.log(user,pw);
+        
+        var obj={
+            user:user,
+            pw:pw
+        }
+        console.log(obj)
+        arr.push(obj)
+        localStorage.setItem("register",JSON.stringify(arr))
+        var y=confirm("successfully register do you want to go to login page")
+        if(y){
+            window.location.assign("./login.html")
+        }
+
+
+
+
+
+
+    })
+    </script>
+</body>
+</html>

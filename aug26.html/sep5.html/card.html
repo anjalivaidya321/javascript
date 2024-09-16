@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <style>
+       #main{
+        box-shadow: 0px 0px 5px 3px bisque;
+        width:200px;
+        height: 150px;
+        text-align: center;
+       }
+    </style> -->
+</head>
+<body>
+    <form>
+
+        <input type="text" placeholder="Enter the text" id="inp"><br>
+        <input type="password" placeholder="password" id="pw"><br>
+        <input type="email" placeholder="mail" id="mail"><br>
+        <input type="number" placeholder="pnone number" id="phn"><br>
+        <button id="btn">ADD TASK</button>
+    </form>
+    <script>
+        let btn=document.getElementById("btn")
+        btn.addEventListener("click",function(){
+            event.preventDefault()
+
+            let div=document.createElement("div")
+            div.style.boxShadow="0px 0px 3px 5px green"
+
+
+            let a=document.getElementById("inp")
+            let e=document.createElement("h5")
+            e.innerText=a.value
+           
+
+            let b=document.getElementById("pw")
+            let f=document.createElement("h5")
+            f.innerText=b.value
+           
+
+            let c=document.getElementById("mail")
+            let g=document.createElement("h5")
+            g.innerText=c.value
+           
+            let d=document.getElementById("phn")
+            let h=document.createElement("h5")
+            h.innerText=d.value
+            let k=document.createElement("button")
+            k.innerHTML="Edit"
+            k.addEventListener("click",function(){
+                e.innerText=prompt("enter the value")
+                f.innerText=prompt("enter the value")
+                g.innerText=prompt("enter the value")
+                h.innerText=prompt("enter the value")
+            })
+            let m=document.createElement("button")
+            m.innerHTML=`<i class="fa-solid fa-xmark"></i>`
+            m.addEventListener("click",function(){
+                e.remove()
+                f.remove()
+                g.remove()
+                h.remove()
+                k.remove()
+                m.remove()
+                div.remove();
+            })
+            div.append(e,f,g,h,k,m)
+            document.body.append(div)
+        })
+    </script>
+</body>
+</html>
